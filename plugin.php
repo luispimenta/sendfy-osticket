@@ -1,11 +1,11 @@
 <?php
 
 return array(
-    'id'          => 'osticket:whatsfy',
+    'id'          => 'osticket:sendzap',
     'version'     => '1.0',
-    'name'        => 'Whatsfy Whatsapp Notification',
+    'name'        => 'Sendzap Whatsapp Notification',
     'author'      => 'Luis Pimenta',
     'description' => 'Whatsapp Notification on new/update ticket for osTicket',
-    'url'         => 'https://github.com/luispimenta/whatsfy-osticket',
-    'plugin'      => 'whatsfy.php:WhatsfyPlugin',
+    'url'         => 'https://github.com/luispimenta/sendzap-osticket',
+    'plugin'      => 'sendzap.php:SendzapPlugin',
 );

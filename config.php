@@ -2,7 +2,7 @@
 
 require_once INCLUDE_DIR . 'class.plugin.php';
 
-class WhatsfyPluginConfig extends PluginConfig {
+class SendzapPluginConfig extends PluginConfig {
 
     // Provide compatibility function for versions of osTicket prior to
     // translation support (v1.9.4)
@@ -17,28 +17,28 @@ class WhatsfyPluginConfig extends PluginConfig {
                 }
             );
         }
-        return Plugin::translate('whatsfy');
+        return Plugin::translate('sendzap');
     }
 
     function getOptions() {
         list ($__, $_N) = self::translate();
 
         return array(
-            'whatsfy-whatsapp-key' => new TextboxField(array(
-              'label'           => $__('Whatsfy Whatsapp Key'),
+            'sendzap-whatsapp-key' => new TextboxField(array(
+              'label'           => $__('Sendzap Whatsapp Key'),
               'required'        =>true,
               'default'         => '',
-              'placeholder'     => "Whatsfy Whatsapp Key",
+              'placeholder'     => "Sendzap Whatsapp Key",
               'configuration' => array(
                 'size'   => 130,
                 'length' => 300
               )
               )),
-              'whatsfy-x-api-key' => new TextboxField(array(
-                'label'           => $__('Whatsfy x-api-key'),
+              'sendzap-x-api-key' => new TextboxField(array(
+                'label'           => $__('Sendzap x-api-key'),
                 'required'        =>true,
                 'default'         => '',
-                'placeholder'     => "Whatsfy x-api-key",
+                'placeholder'     => "Sendzap x-api-key",
                 'configuration' => array(
                   'size'   => 130,
                   'length' => 300
