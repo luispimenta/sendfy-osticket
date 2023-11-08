@@ -2,7 +2,7 @@
 
 require_once INCLUDE_DIR . 'class.plugin.php';
 
-class SendzapPluginConfig extends PluginConfig {
+class SendfyPluginConfig extends PluginConfig {
 
     // Provide compatibility function for versions of osTicket prior to
     // translation support (v1.9.4)
@@ -17,28 +17,28 @@ class SendzapPluginConfig extends PluginConfig {
                 }
             );
         }
-        return Plugin::translate('sendzap');
+        return Plugin::translate('sendfy');
     }
 
     function getOptions() {
         list ($__, $_N) = self::translate();
 
         return array(
-          'sendzap-x-api-key' => new TextboxField(array(
-            'label'           => $__('Sendzap x-api-key'),
+          'sendfy-x-api-key' => new TextboxField(array(
+            'label'           => $__('Sendfy x-api-key'),
             'required'        =>true,
             'default'         => '',
-            'placeholder'     => "Sendzap x-api-key",
+            'placeholder'     => "Sendfy x-api-key",
             'configuration' => array(
               'size'   => 130,
               'length' => 300
             )
           )),
-          'sendzap-whatsapp-key' => new TextboxField(array(
-            'label'           => $__('Sendzap Instance id'),
+          'sendfy-whatsapp-key' => new TextboxField(array(
+            'label'           => $__('Sendfy Instance id'),
             'required'        =>true,
             'default'         => '',
-            'placeholder'     => "Sendzap Instance id",
+            'placeholder'     => "Sendfy Instance id",
             'configuration' => array(
               'size'   => 130,
               'length' => 300
