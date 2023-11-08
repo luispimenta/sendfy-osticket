@@ -1,6 +1,6 @@
 ![osticket](https://demo.osticket.com.br/scp/images/ost-logo.png)
 
-sendfy-osTicket for osTicket 1.15 or less, for osTicet 1.17 [use this one](https://github.com/luispimenta/sendfy-osticket-1-17)
+sendfy-osTicket for osTicket 1.15 or less, for osTicket 1.17 [use this one](https://github.com/luispimenta/sendfy-osticket-1-17)
 ==============
 An plugin for [osTicket](https://osticket.com) to send Whatsapp message with [Sendfy](https://sendfy.app/)
 
